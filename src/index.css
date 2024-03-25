@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slick-slide > div {
+  margin: 0 20px;
+}
+
+.slick-dots li button::before {
+  color: #0d6ce9;
+}
+.slick-dots li.slick-active button:before {
+  color: #0d6ce9 !important;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -50px; /* Adjust this value as needed to move the dots further below */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(243 244 246);
+}
+
+@layer keyframes {
+  /* Define your animation keyframes */
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+
+/* Apply the animation using Tailwind utility class */
+.animate-slide-in {
+  animation: slideIn 1s forwards;
+}
