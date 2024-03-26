@@ -1,6 +1,6 @@
 export const Demo = () => {
   return (
-    <div className="items-center justify-center text-center  pt-28 pb-16 ">
+    <div className="items-center justify-center text-center scale-75 md:scale-100 md:pt-28 md:pb-16 ">
       <h1 className="text-4xl font-nunito font-extrabold  py-3 text-customGrayText leading-normal">
         Get Started with our products,<br></br>Ask for a Demo
       </h1>

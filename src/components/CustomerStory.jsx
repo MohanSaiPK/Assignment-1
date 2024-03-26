@@ -24,20 +24,22 @@ export const CustomerStory = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center gap-y-10 py-[100px]">
-      <div className=" flex flex-col justify center space-y-10">
+    <div className="flex flex-col justify-center items-center gap-y-10 md:py-28 md:scale-100 scale-75">
+      <div className=" flex flex-col justify center space-y-12">
         <h2 className="text-4xl font-nunito font-black leading-9 text-customGrayText text-center">
           Customer Success Stories
         </h2>
-        <p className="font-nunito text-customGrayText py-2 px-64 text-center text-lg ">
-          Discover how our solutions have empowered labs across industries. From
-          aiding a COVID-19 vaccine manufacturer in achieving Data Integrity,
-          Compliance and Automation to streamlining Pharma manufacturing
-          processes, our impact resonates across industries.
-        </p>
+        <div>
+          <p className="font-nunito text-customGrayText  py-2 md:px-64 text-center text-lg ">
+            Discover how our solutions have empowered labs across industries.
+            From aiding a COVID-19 vaccine manufacturer in achieving Data
+            Integrity, Compliance and Automation to streamlining Pharma
+            manufacturing processes, our impact resonates across industries.
+          </p>
+        </div>
       </div>
-      <div className="flex flex-col items-center space-y-16">
-        <div className="flex gap-6">
+      <div className="flex flex-col items-center space-y-16 ">
+        <div className="md:flex-row flex flex-col md:gap-6 gap-3">
           {customerData.map((customer, index) => (
             <CustomerCard
               key={index}

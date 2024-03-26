@@ -88,60 +88,63 @@ export const Functions = () => {
 
   return (
     <div className="m-0 bg-gray-100 px-10 text-center items-center font-nunito py-20">
-      <h1 className="text-center text-customGrayText text-4xl font-extrabold leading-normal">
-        Achieve Complete Process <br></br>Automation, Digitalisation and
-        <br></br>
-        Compliance across Laboratory <br></br>Operations
+      <h1 className="text-center text-customGrayText md:text-4xl text-xl font-extrabold md:leading-normal">
+        Achieve Complete Process Automation,<br></br> Digitalisation and
+        Compliance across <br></br> Laboratory Operations
       </h1>
-      <p className="pt-10 text-base">
+      <p className="md:pt-10 text-sm md:text-base py-2">
         Seamlessly manage your tests, samples, experiments & reports, Capture
-        data from any<br></br> lab instrument,<br></br> Record and execute your
-        test procedures and more !
+        data from any lab instrument,<br></br> Record and execute your test
+        procedures and more !
       </p>
-      <div className="space-x-4 py-4">
-        <button
-          className={`p-4 rounded-3xl font-bold ${
-            activeButton === 1
-              ? "bg-customBlue text-white "
-              : "bg-white text-customBlue border-2 border-gray-200"
-          }`}
-          onClick={() => handleButtonClick(1)}
-        >
-          Sample Testing
-        </button>
-        <button
-          className={`p-4 rounded-3xl font-bold ${
-            activeButton === 2
-              ? "bg-customBlue text-white"
-              : "bg-white text-customBlue border-2 border-gray-200"
-          }`}
-          onClick={() => handleButtonClick(2)}
-        >
-          Experiment/Task Execution
-        </button>
-        <button
-          className={`p-4 rounded-3xl font-bold ${
-            activeButton === 3
-              ? "bg-customBlue text-white"
-              : "bg-white text-customBlue border-2 border-gray-200"
-          }`}
-          onClick={() => handleButtonClick(3)}
-        >
-          Instrument Data Capture
-        </button>
-        <button
-          className={`p-4 rounded-3xl font-bold ${
-            activeButton === 4
-              ? "bg-customBlue text-white"
-              : "bg-white text-customBlue border-2 border-gray-200"
-          }`}
-          onClick={() => handleButtonClick(4)}
-        >
-          Document Management
-        </button>
+      <div className="flex justify-center md:pl-40  py-4">
+        <div className="grid grid-cols-2 md:flex gap-2 md:space-x-2 justify-center">
+          <button
+            className={`md:p-4 p-1 md:rounded-3xl rounded-sm md:font-bold whitespace-nowrap text-xs md:text-base ${
+              activeButton === 1
+                ? "bg-customBlue text-white "
+                : "bg-white text-customBlue border-2 border-gray-200"
+            }`}
+            onClick={() => handleButtonClick(1)}
+          >
+            Sample Testing
+          </button>
+          <button
+            className={`md:p-4 p-1 md:rounded-3xl rounded-sm md:font-bold text-xs md:text-base whitespace-nowrap ${
+              activeButton === 2
+                ? "bg-customBlue text-white"
+                : "bg-white text-customBlue border-2 border-gray-200"
+            }`}
+            onClick={() => handleButtonClick(2)}
+          >
+            Experiment/Task Execution
+          </button>
+          <button
+            className={`md:p-4 p-1 md:rounded-3xl rounded-sm md:font-bold text-xs md:text-base whitespace-nowrap ${
+              activeButton === 3
+                ? "bg-customBlue text-white"
+                : "bg-white text-customBlue border-2 border-gray-200"
+            }`}
+            onClick={() => handleButtonClick(3)}
+          >
+            Instrument Data Capture
+          </button>
+          <button
+            className={`md:p-4 p-1 md:rounded-3xl rounded-sm md:font-bold text-xs md:text-base whitespace-nowrap ${
+              activeButton === 4
+                ? "bg-customBlue text-white"
+                : "bg-white text-customBlue border-2 border-gray-200"
+            }`}
+            onClick={() => handleButtonClick(4)}
+          >
+            Document Management
+          </button>
+        </div>
       </div>
-      <div className="m-0 bg-gray-100 px-32 text-center items-center font-nunito ">
-        {<SampleTesting data={selectedData} />}
+      <div className="flex">
+        <div className="m-0 md:p-4 md:w-full bg-gray-100 md:px-32 text-center items-center font-nunito ">
+          {<SampleTesting data={selectedData} />}
+        </div>
       </div>
     </div>
   );

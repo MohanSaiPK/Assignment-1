@@ -57,14 +57,14 @@ export const About = () => {
     },
   ];
   return (
-    <div className="flex  justify-center py-4">
+    <div className="flex   justify-center py-4">
       <div className="flex flex-col w-10/12 pt-28 space-y-6">
-        <div className="flex justify-center  ">
-          <div className="flex flex-col w-2/6 space-y-6">
+        <div className="md:flex grid grid-cols-2 gap-10  justify-end  ">
+          <div className="flex flex-col md:w-2/6 space-y-6">
             <div>
               <img src="../Logos/logo-blue.png" width="160px"></img>
             </div>
-            <div className="flex flex-col pl-12 font-nunito w-2/3 ">
+            <div className="flex flex-col md:pl-12 font-nunito w-2/3 ">
               <h6 className="text-base  font-bold leading-10 text-customGrayText">
                 Global HQ
               </h6>
@@ -74,23 +74,21 @@ export const About = () => {
               </p>
             </div>
           </div>
-          <div className="flex space-x-6   ">
-            {aboutData.map(({ title, subArr }, index) => (
-              <div className="w-2/6" key={index}>
-                <AboutCards title={title} subArr={subArr} />
-              </div>
-            ))}
-          </div>
+          {aboutData.map(({ title, subArr }, index) => (
+            <div className="w-2/6" key={index}>
+              <AboutCards title={title} subArr={subArr} />
+            </div>
+          ))}
         </div>
         <div>
           <img
             src="../Banner/footer-img.png"
-            className="w-11/12 pl-10 my-5"
+            className="md:w-11/12 md:pl-10 my-5"
           ></img>
         </div>
-        <div className="w-11/12 pl-10">
+        <div className="w-11/12 md:pl-10">
           <div className="flex justify-between items-center">
-            <p className="font-nunito text-sm text-gray-500">
+            <p className="font-nunito md:text-sm text-sm text-gray-500">
               Copyright © Agaram Technologies Pvt Ltd 2023-2024. All rights
               reserved
             </p>

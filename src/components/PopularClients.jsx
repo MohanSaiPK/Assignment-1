@@ -8,7 +8,7 @@ export const PopularClients = () => {
     "../PopClient/roquette.png ",
   ];
   return (
-    <div className="flex justify-center items-center max-w-60 mx-auto py-20 space-x-6 ">
+    <div className="md:flex md:justify-center md:scale-100 scale-75 grid grid-cols-3 gap-6 w-full px-6 items-center md:max-w-60 mx-auto md:py-20 md:space-x-6 ">
       {imgsList.map((img, i) => (
         <img key={i} src={img} className="w-30 h-24"></img>
       ))}

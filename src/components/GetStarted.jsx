@@ -3,7 +3,7 @@ import React from "react";
 export const GetStarted = () => {
   return (
     <div className="bg-getStartedBG bg-customBlue flex ">
-      <div className="flex  mx-40  justify-center items-center py-16 ">
+      <div className="flex md:flex-row flex-col scale-75 md:scale-100 md:mx-40  justify-center items-center md:py-16 ">
         <div className="flex flex-col justify-center items-center">
           <div className=" space-y-8 ">
             <h2 className="text-4xl font-nunito font-black leading-9 text-white ">

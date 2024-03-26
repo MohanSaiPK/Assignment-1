@@ -65,12 +65,37 @@ export const Sliders = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
-    <div className="flex flex-col bg-gray-100 pb-32">
-      <div className="items-center justify-center text-center mt-10 pt-32 ">
-        <h1 className="text-4xl font-nunito/900 font-bold leading-normal text-customGrayText pb-3">
+    <div className="flex flex-col bg-gray-100 pb-20 md:pb-32">
+      <div className="items-center justify-center text-center md:mt-10 md:pt-20 md:scale-100 scale-75 ">
+        <h1 className="text-4xl font-nunito font-bold leading-normal text-customGrayText pb-3">
           Global Presence across Regulated and<br></br> Non-Regulated Industries
         </h1>
         <p className="font-nunito text-customGrayText py-4 leading-normal pt-3 ">
@@ -81,7 +106,7 @@ export const Sliders = () => {
           Gas, Chemical, Process Manufacturing, Environment, etc
         </p>
       </div>
-      <div className=" justify-center m-auto w-3/4 pt-8 ">
+      <div className=" justify-center m-auto w-3/4 md:pt-8 ">
         <div className="  ">
           <Slider {...settings}>
             {data.map((d, index) => (

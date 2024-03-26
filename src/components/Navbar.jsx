@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export const Navbar = () => {
   const [navbarColor, setNavbarColor] = useState("bg-customBlue"); // State to manage navbar color
@@ -140,27 +141,29 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`w-full h-24 px-52 flex space-x-6 items-center justify-center top-0 z-50 transition-all duration-300 ${navbarColor} shadow-md`}
+      className={`w-full  h-16 md:h-24 px-52 flex space-x-6 items-center justify-center top-0 z-50 transition-all duration-300 ${navbarColor} shadow-md`}
     >
-      <div className="flex justify-center items-center w-full max-w-4xl px-4">
+      <div className=" flex md:justify-center items-center md:w-full max-w-4xl px-4 md:space-x-0 space-x-14 justify-between">
         <img
           src={navImage}
           alt="Logo"
-          width="180"
           height="100"
-          className="mr-10 w-52"
+          className="mr-10 w-32 h-auto md:w-44 "
         />
+        <div className="md:hidden text-white ">
+          <FontAwesomeIcon icon={faBars} />
+        </div>
         <ul
-          className={`font-nunito ${navItemsColor} flex space-x-10 items-center`}
+          className={`font-nunito ${navItemsColor} md:flex space-x-10 items-center hidden`}
         >
           {navData.map(({ title, id, dropMenu }) => (
             <li
               key={id}
               onMouseEnter={() => handleDropdownEnter(id)}
               onMouseLeave={() => handleDropdownLeave(id)}
-              className={`relative ${navItemsColor}`}
+              className={`relative ${navItemsColor} `}
             >
-              <button className="navbar-dropdown-link">{title}</button>
+              <button className="">{title}</button>
               {dropdowns[id] && (
                 <div
                   id={`dropdown-${id}`}
