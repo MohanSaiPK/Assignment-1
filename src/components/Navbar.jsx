@@ -143,14 +143,15 @@ export const Navbar = () => {
     <nav
       className={`w-full  h-16 md:h-24 px-52 flex space-x-6 items-center justify-center top-0 z-50 transition-all duration-300 ${navbarColor} shadow-md`}
     >
-      <div className=" flex md:justify-center items-center md:w-full max-w-4xl px-4 md:space-x-0 space-x-14 justify-between">
+      <div className=" flex md:justify-center items-center md:w-full max-w-4xl px-4 md:space-x-0  space-x-14 justify-between">
         <img
           src={navImage}
           alt="Logo"
           height="100"
-          className="mr-10 w-32 h-auto md:w-44 "
+          className="mr-10 w-32 h-auto md:w-44 md:relative absolute  left-6 "
         />
-        <div className="md:hidden text-white ">
+
+        <div className={`md:hidden absolute right-6 ${navItemsColor} `}>
           <FontAwesomeIcon icon={faBars} />
         </div>
         <ul
