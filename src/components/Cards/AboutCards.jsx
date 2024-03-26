@@ -10,7 +10,7 @@ export const AboutCards = (props) => {
           {props.title}
         </h6>
       </div>
-      <div className="flex flex-col w-40 space-y-5">
+      <div className="flex flex-col w-40 md:space-y-5 space-y-1">
         {props.subArr.map((item, index) => (
           <div
             key={index}

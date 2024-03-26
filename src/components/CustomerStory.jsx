@@ -24,7 +24,7 @@ export const CustomerStory = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center gap-y-10 md:py-28 md:scale-100 scale-75">
+    <div className="flex flex-col justify-center items-center gap-y-10 md:py-28 -my-64 md:-my-0 md:scale-100 scale-75">
       <div className=" flex flex-col justify center space-y-12">
         <h2 className="text-4xl font-nunito font-black leading-9 text-customGrayText text-center">
           Customer Success Stories

@@ -6,7 +6,7 @@ export const Info = () => {
   const [counterOn, setCounterOn] = useState(false);
 
   return (
-    <div className="md:mt-20 scale-75 md:scale-100  flex justify-center md:mx-20">
+    <div className="md:mt-20  scale-75 md:scale-100  flex justify-center md:mx-20">
       <ScrollTrigger
         onEnter={() => setCounterOn(true)}
         onExit={() => setCounterOn(false)}
@@ -53,7 +53,7 @@ export const Info = () => {
                 <h6 className="text-6xl font-nunito font-bold leading-10 text-customGrayText flex justify-center">
                   {counterOn && (
                     <CountUp start={0} end={25} duration={3} delay={0} />
-                  )}{" "}
+                  )}
                   +
                 </h6>
 

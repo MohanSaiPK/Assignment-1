@@ -22,7 +22,7 @@ export const Resources = () => {
   ];
   return (
     <div className="flex flex-col items-center justify-center p-24 bg-gray-100">
-      <div className="flex flex-col md:items-start justify-center items-center pt-14">
+      <div className="flex flex-col items-start justify-center  pt-14">
         <div className="text-start md:w-1/2 ">
           <h2 className="text-3xl font-nunito font-black leading-9 text-customGrayText ">
             Resources and Learning

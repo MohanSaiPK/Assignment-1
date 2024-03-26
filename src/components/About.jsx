@@ -57,7 +57,7 @@ export const About = () => {
     },
   ];
   return (
-    <div className="flex   justify-center py-4">
+    <div className="flex   justify-center md:py-4 pb-4">
       <div className="flex flex-col w-10/12 pt-28 space-y-6">
         <div className="md:flex grid grid-cols-2 gap-10  justify-end  ">
           <div className="flex flex-col md:w-2/6 space-y-6">

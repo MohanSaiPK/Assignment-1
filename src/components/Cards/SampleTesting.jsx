@@ -40,7 +40,7 @@ export const SampleTesting = ({ data }) => {
               >
                 <img
                   src={img}
-                  className="md:w-8 w-1/5 h-6 md:h-8 pl-2 md:pl-0 "
+                  className="w-8 md:w-1/5 h-6 md:h-8 pl-2 md:pl-0 "
                 ></img>
 
                 <p className="md:font-bold text-start text-sm md:text-[15px] w-52">
