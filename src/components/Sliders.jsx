@@ -144,14 +144,16 @@ export const Sliders = () => {
                         hoveredIndex === index ? "h-full" : "h-0"
                       } transition-height duration-500`}
                     />
-                    <div className="flex items-center">
-                      <span className="absolute font-nunito py-4 z-50 top-0 left-0 w-full h-full flex items-center justify-center">
+                    <div className="flex items-center justify-center">
+                      <div className="absolute font-nunito py-4 z-50 top-0 left-0 w-full h-full flex items-center justify-center">
                         Read More
-                      </span>
-                      <FontAwesomeIcon
-                        icon={faArrowRight}
-                        className="absolute right-[108px] "
-                      />
+                      </div>
+                      <div>
+                        <FontAwesomeIcon
+                          icon={faArrowRight}
+                          className="relative pl-24"
+                        />
+                      </div>
                     </div>
                   </button>
                 </div>
